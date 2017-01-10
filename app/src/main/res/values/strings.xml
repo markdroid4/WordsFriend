@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Words Friend!</string>
+    <string name="edit_message">Enter letters here</string>
+    <string name="button_send">Find Words</string>
+</resources>
