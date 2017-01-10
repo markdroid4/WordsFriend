@@ -16,6 +16,10 @@ import com.example.mark.firstapp.tasks.AsyncResponse;
 import com.example.mark.firstapp.tasks.LoadJSONTask;
 import com.example.mark.firstapp.util.JSONUtil;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 public class DisplayMessageActivity extends AppCompatActivity implements AsyncResponse {
@@ -61,7 +65,7 @@ public class DisplayMessageActivity extends AppCompatActivity implements AsyncRe
     //this override the implemented method from asyncTask
     @Override
     public void processFinish(Object output){
-        Log.d("INFO", "process this string: " + output);
+        Log.d("INFO", "Received this string: " + output);
         listView = (ListView) findViewById(R.id.lv_word_view);
         ArrayList<String> wordGroups = JSONUtil.getWordGroups(output.toString());
         listAdapter = new ArrayAdapter<>(this, R.layout.tv_word, wordGroups);

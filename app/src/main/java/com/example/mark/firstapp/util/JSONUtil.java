@@ -16,11 +16,25 @@ public class JSONUtil {
 //        JSONObject weather = obj.getJSONObject("weather");
 //        return weather.getString("condition");
 
+//        JSONArray jsonArray = null;
+//        try {
+//            jsonArray = new JSONArray(output);
+//            Log.d("INFO", "jsonArray length " + jsonArray.length());
+//            for (int i = 0; i < jsonArray.length(); i++) {
+//                JSONArray subArray = new JSONArray(jsonArray.getJSONObject(i));
+//                Log.d("INFO", "MY ARRAY: " + subArray.toString());
+//            }
+//        } catch (JSONException e)
+//        {
+//            Log.d("INFO", "EXCEPTION " + e.toString());
+//            e.printStackTrace();
+//        }
+
         //TODO: replace this dummy data
-        ArrayList<String> wordGroups = new ArrayList<String>();
-        wordGroups.add("group 5");
-        wordGroups.add("group 4");
-        wordGroups.add("group 3");
+        ArrayList<String> wordGroups = new ArrayList<>();
+        wordGroups.add(JSONString);
+        //wordGroups.add("group 4");
+        //wordGroups.add("group 3");
         return wordGroups;
 
     }
